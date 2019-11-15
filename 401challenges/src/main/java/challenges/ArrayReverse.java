@@ -1,10 +1,7 @@
 public class ArrayReverse {
     public static void main(String[] args){
-        int[] numbers = new int[]{1,2,3,4,5,6};
-        int[] reverse = reverseArray(numbers);
-
-        
-        
+        int[] numbers = new int[]{1,2,3,4,5,6,7,8,9,10,11};
+        reverseArray(numbers);
     }
 
     private static int[] reverseArray(int[] numberList)
@@ -14,7 +11,7 @@ public class ArrayReverse {
         int swap1=0;
         int swap2=0;
         if (count>0) {
-            for (int i=0;  i<count/2;i++,count--) {
+            for (int i=0;  i<=count/2+1;i++,count--) {
                //System.out.println("Enhanced for-each loop: i = " + numberList[i-1]);
              swap1=numberList[i];
              swap2=numberList[count];
